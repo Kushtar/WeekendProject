@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repeating_Payments</fullName>
+    <columns>NAME</columns>
+    <columns>Amount__c</columns>
+    <columns>Remaining_Balance__c</columns>
+    <columns>Phone__c</columns>
+    <columns>Email__c</columns>
+    <columns>Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Payment_Occurance__c</field>
+        <operation>equals</operation>
+        <value>Monthly</value>
+    </filters>
+    <label>Repeating Payments</label>
+</ListView>

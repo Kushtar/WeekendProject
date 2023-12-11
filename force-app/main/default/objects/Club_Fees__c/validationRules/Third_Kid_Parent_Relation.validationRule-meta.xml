@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Kid_Parent_Relation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Third_Kid__r.Student__r.Parent_Name__r.Id != Parent__r.Id, !ISBLANK(   Third_Kid__c   ))</errorConditionFormula>
+    <errorDisplayField>Third_Kid__c</errorDisplayField>
+    <errorMessage>Parent and Child have no relationship</errorMessage>
+</ValidationRule>

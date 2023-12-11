@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tdc_tsw__Response_Action__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Response Action</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stop Drip</fullName>
+                <default>false</default>
+                <label>Stop Drip</label>
+            </value>
+            <value>
+                <fullName>Abort the current drip and Execute the next Drip</fullName>
+                <default>false</default>
+                <label>Abort the current drip and Execute the next Drip</label>
+            </value>
+            <value>
+                <fullName>Jump Action</fullName>
+                <default>false</default>
+                <label>Jump Action</label>
+            </value>
+            <value>
+                <fullName>Execute the next Drip</fullName>
+                <default>false</default>
+                <label>Execute the next Drip</label>
+            </value>
+            <value>
+                <fullName>Execute another action of another Drip</fullName>
+                <default>false</default>
+                <label>Execute another action of another Drip</label>
+            </value>
+            <value>
+                <fullName>--None--</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>--None--</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Club Fee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Club Fees</value>
+    </caseValues>
+    <layouts>
+        <layout>Club Fee Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Enrollments</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>First_Kid_Parent_Child_relationship</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Fourth_Kid_Parent_Relationship</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Second_Kid_Parent_child_relationship</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Third_Kid_Parent_Relation</name>
+    </validationRules>
+</CustomObjectTranslation>

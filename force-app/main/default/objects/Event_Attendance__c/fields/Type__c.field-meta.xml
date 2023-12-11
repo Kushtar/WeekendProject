@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Attendance Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+                <label>In-Person</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <label>Online</label>
+            </value>
+            <value>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+                <label>Maybe</label>
+            </value>
+            <value>
+                <fullName>Can Not</fullName>
+                <default>false</default>
+                <label>Can Not</label>
+            </value>
+            <value>
+                <fullName>Early Commitment</fullName>
+                <default>false</default>
+                <label>Early Commitment</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

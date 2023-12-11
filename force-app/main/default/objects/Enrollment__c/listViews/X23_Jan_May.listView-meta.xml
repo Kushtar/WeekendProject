@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X23_Jan_May</fullName>
+    <columns>NAME</columns>
+    <columns>Parent__c</columns>
+    <columns>Grade__c</columns>
+    <columns>Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>contains</operation>
+        <value>Jan-May 2023</value>
+    </filters>
+    <filters>
+        <field>Enrollment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>No Show,Cancelled</value>
+    </filters>
+    <label>23 Jan-May</label>
+</ListView>

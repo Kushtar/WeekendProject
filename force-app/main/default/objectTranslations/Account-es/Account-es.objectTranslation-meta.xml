@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>tdc_tsw__Send_SMS</name>
+    </quickActions>
+    <recordTypes>
+        <description>Una cuenta que representa un hogar que contiene una o más personas.</description>
+        <label>Cuenta de hogar</label>
+        <name>HH_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Una cuenta que representa una organización</description>
+        <label>Organización</label>
+        <name>Organization</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Send_SMS_List</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Send_SMS_SF1</name>
+    </webLinks>
+</CustomObjectTranslation>

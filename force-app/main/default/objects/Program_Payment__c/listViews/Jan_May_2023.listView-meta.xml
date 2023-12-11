@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jan_May_2023</fullName>
+    <columns>Parent__c</columns>
+    <columns>Amount__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Club_Program__c</field>
+        <operation>contains</operation>
+        <value>Jan-May</value>
+    </filters>
+    <label>Jan-May 2023</label>
+</ListView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>tdc_tsw__Campaign_Member_FIeld</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>tdc_tsw__Message_FieldSet</name>
+    </fieldSets>
+    <layouts>
+        <layout>Incoming</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Linked Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>MMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Message</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Message Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Linked Objects(Records the message is linked to)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>MMS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Message &amp; Template</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VoiceMail</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Linked Objects(Records the message is linked to)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Voice Template</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>tdc_tsw__Read_All</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>tdc_tsw__Reply</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>tdc_tsw__Resend</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>tdc_tsw__Incoming</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>tdc_tsw__Outgoing</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>tdc_tsw__VoiceMail</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Create_Case</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Create_Cases</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Create_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Create_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Mark_As_Read</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Mark_As_Read_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Reply</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Resend</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__Resend_RelatedList</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tdc_tsw__SMS_Opt_Out</name>
+    </webLinks>
+</CustomObjectTranslation>

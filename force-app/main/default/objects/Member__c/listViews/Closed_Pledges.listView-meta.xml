@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Pledges</fullName>
+    <columns>NAME</columns>
+    <columns>Pledge_Amount__c</columns>
+    <columns>Total_Payments__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Active_Pledge__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Remaining_Balance__c</field>
+        <operation>lessOrEqual</operation>
+        <value>0</value>
+    </filters>
+    <label>Closed Pledges</label>
+</ListView>

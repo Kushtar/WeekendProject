@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>kgstudent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>kgstudents</value>
+    </caseValues>
+    <layouts>
+        <layout>kgstudent Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Note</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Parents</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

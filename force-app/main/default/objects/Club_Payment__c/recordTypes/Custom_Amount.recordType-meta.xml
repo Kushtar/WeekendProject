@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Amount</fullName>
+    <active>true</active>
+    <label>Custom Amount</label>
+    <picklistValues>
+        <picklist>Payment_Method__c</picklist>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Paypal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zelle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upcoming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Semester__c</picklist>
+        <values>
+            <fullName>First</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Second</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

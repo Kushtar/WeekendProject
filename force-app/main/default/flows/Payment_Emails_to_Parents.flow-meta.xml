@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>This Email contains processed payment amount and remaining balance.</description>
+        <name>Payment_processed_Notification</name>
+        <label>Payment processed Notification</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailtoParentsaboutpayment</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Parent__r.Parent_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Кыргыз Коомдук Борбору</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <description>KCC: This email contains information about payment amount and remaining balance for the weekend club fee</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CalculateRemainingBalance</name>
+        <dataType>Currency</dataType>
+        <expression>IF({!$Record.Parent__r.Remaining_Balance__c} - {!$Record.Amount__c}&lt;0, 0, {!$Record.Parent__r.Remaining_Balance__c} - {!$Record.Amount__c})</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Payment Emails to Parents {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Payment Emails to Parents</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Payment_processed_Notification</targetReference>
+        </connector>
+        <filterFormula>{!$Record.Parent__r.Parent__r.Email__c}!=Null</filterFormula>
+        <object>Program_Payment__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <description>This email is send every time club fee is created</description>
+        <name>EmailtoParentsaboutpayment</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;Урматтуу, {!$Record.Parent__r.Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;Сиздин Кыргыз Коомдук Борборундагы кружокторго катышып жаткан {!$Record.Parent__r.Total_Enrolled_Students__c}баланыздын окуусу үчүн ${!$Record.Amount__c} төлөмүнүз кабыл алынды. Сиздин калган балансыныз {!CalculateRemainingBalance}. Төлөмгө байланыштуу суроонyз болсо 3127742463 номерине кайрылыныз.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;Терең урматтоо менен,&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;Кыргыз Коомдук Борбору&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;1114 N Arlington Heights Rd,&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;Arlington Heights, IL 60004&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14.000001px; background-color: rgb(255, 255, 255);&quot;&gt;3127305006&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tdc_tsw__Next_Action__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Next Action</label>
+    <referenceTo>tdc_tsw__Drip_Campaign_Action__c</referenceTo>
+    <relationshipLabel>Drip Campaign Actions (Next Action)</relationshipLabel>
+    <relationshipName>Drip_Campaign_Actions1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

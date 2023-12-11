@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Members</value>
+    </caseValues>
+    <layouts>
+        <layout>Member Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Pledge</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ended Pledges</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Family Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Note</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_Contact</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Donation</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

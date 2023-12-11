@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Schoolers_List</fullName>
+    <columns>NAME</columns>
+    <columns>High_Shoolers__c</columns>
+    <columns>Active_Program_Payments__c</columns>
+    <columns>Total_Balance__c</columns>
+    <columns>Remaining_Balance__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>High_Shoolers__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>High Schoolers List</label>
+</ListView>

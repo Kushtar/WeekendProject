@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tdc_tsw__Compliance_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <description>ByPass Templates In Compliance Mechanism</description>
+    <externalId>false</externalId>
+    <label>Compliance Template</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

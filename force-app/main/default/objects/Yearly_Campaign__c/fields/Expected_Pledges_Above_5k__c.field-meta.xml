@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expected_Pledges_Above_5k__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Expected Pledges above 5k</inlineHelpText>
+    <label>Expected Pledges Above 5k</label>
+    <summarizedField>Pledge__c.Expected_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Pledge__c.Expected_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>5000</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Pledge__c.Yearly_Campaign__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

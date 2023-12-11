@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Kid__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Second Kid</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Club_Program__c</field>
+            <operation>equals</operation>
+            <valueField>Enrollment__c.Program__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Enrollment__c</referenceTo>
+    <relationshipLabel>Club Fees (Second Kid)</relationshipLabel>
+    <relationshipName>Club_Fees1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

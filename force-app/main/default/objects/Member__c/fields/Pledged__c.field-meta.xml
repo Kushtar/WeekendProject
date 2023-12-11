@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pledged__c</fullName>
+    <externalId>false</externalId>
+    <label>Payment Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pledged</fullName>
+                <default>true</default>
+                <label>Pledged</label>
+            </value>
+            <value>
+                <fullName>Payment Started</fullName>
+                <default>false</default>
+                <label>Payment Started</label>
+            </value>
+            <value>
+                <fullName>Card Declined</fullName>
+                <default>false</default>
+                <label>Card Declined</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Schoolers</fullName>
+    <columns>NAME</columns>
+    <columns>Parent_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Grade__c</field>
+        <operation>equals</operation>
+        <value>High-Schooler</value>
+    </filters>
+    <label>High Schoolers</label>
+</ListView>

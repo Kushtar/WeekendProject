@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gold_Members</fullName>
+    <columns>NAME</columns>
+    <columns>Pledge_Amount__c</columns>
+    <columns>Direct_Donations__c</columns>
+    <columns>Remaining_Balance__c</columns>
+    <columns>Phone__c</columns>
+    <columns>Agent__c</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Pledge_Amount__c</field>
+        <operation>lessThan</operation>
+        <value>5000</value>
+    </filters>
+    <label>Gold Members</label>
+</ListView>

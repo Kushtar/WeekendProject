@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Students</fullName>
+    <columns>Parent_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Grade__c</columns>
+    <columns>Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Grade__c</field>
+        <operation>notEqual</operation>
+        <value>High-Schooler</value>
+    </filters>
+    <label>Active Students</label>
+</ListView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Teachers</fullName>
+    <columns>NAME</columns>
+    <columns>Role__c</columns>
+    <columns>Work_Unit_Rate__c</columns>
+    <columns>Total_Earnings__c</columns>
+    <columns>Total_Payments__c</columns>
+    <columns>Upcoming_Payment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Role__c</field>
+        <operation>equals</operation>
+        <value>Teacher,Assistant</value>
+    </filters>
+    <label>Active Teachers</label>
+</ListView>

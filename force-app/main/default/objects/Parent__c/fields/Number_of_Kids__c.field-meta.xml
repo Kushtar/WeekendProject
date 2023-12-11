@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Kids__c</fullName>
+    <externalId>false</externalId>
+    <label>Number of Kids</label>
+    <summaryFilterItems>
+        <field>Student__c.Grade__c</field>
+        <operation>notEqual</operation>
+        <value>High-Schooler</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Student__c.Active_Enrollments__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Student__c.Parent_Name__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

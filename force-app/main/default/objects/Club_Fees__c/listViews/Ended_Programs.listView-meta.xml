@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ended_Programs</fullName>
+    <columns>NAME</columns>
+    <columns>Total_Payments__c</columns>
+    <columns>Total_Program_Fee__c</columns>
+    <columns>Remaining_Balance__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Program_Status__c</field>
+        <operation>equals</operation>
+        <value>Ended</value>
+    </filters>
+    <label>Ended Programs</label>
+</ListView>

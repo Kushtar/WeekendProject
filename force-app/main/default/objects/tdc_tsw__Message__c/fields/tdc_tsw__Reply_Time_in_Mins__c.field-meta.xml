@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tdc_tsw__Reply_Time_in_Mins__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Reply time IN MINUTES from Incoming create time - Outgoing Create time. For reporting. By Rinnie</description>
+    <externalId>false</externalId>
+    <formula>( ROUND((TIMEVALUE(CreatedDate) - TIMEVALUE(tdc_tsw__Message__r.CreatedDate))/60000,2))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Time difference IN MINUTES between Incoming and Outgoing SMS</inlineHelpText>
+    <label>Reply Time (in Mins)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

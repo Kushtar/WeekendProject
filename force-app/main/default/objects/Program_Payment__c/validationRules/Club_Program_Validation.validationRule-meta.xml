@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Club_Program_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Parent__r.Club_Program__r.Id  &lt;&gt;  Club_Program__r.Id</errorConditionFormula>
+    <errorDisplayField>Club_Program__c</errorDisplayField>
+    <errorMessage>Parent&apos;s Club Program does not match</errorMessage>
+</ValidationRule>

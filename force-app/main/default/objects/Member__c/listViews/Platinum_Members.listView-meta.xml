@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Platinum_Members</fullName>
+    <columns>NAME</columns>
+    <columns>Pledge_Amount__c</columns>
+    <columns>Remaining_Balance__c</columns>
+    <columns>Agent__c</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pledge_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>5000</value>
+    </filters>
+    <label>Platinum Members</label>
+</ListView>

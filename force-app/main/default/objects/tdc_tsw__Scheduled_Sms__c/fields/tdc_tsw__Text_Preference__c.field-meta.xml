@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tdc_tsw__Text_Preference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to choose Text in case of Update</description>
+    <externalId>false</externalId>
+    <label>Text Preference</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Message Text</fullName>
+                <default>true</default>
+                <label>Message Text</label>
+            </value>
+            <value>
+                <fullName>Template Text</fullName>
+                <default>false</default>
+                <label>Template Text</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

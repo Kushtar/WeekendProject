@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ended_Total_Payments__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Ended Pledge Total Payments</inlineHelpText>
+    <label>Total Payments</label>
+    <summarizedField>Pledge__c.Total_Paymentss__c</summarizedField>
+    <summaryFilterItems>
+        <field>Pledge__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Ended</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Pledge__c.Member__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

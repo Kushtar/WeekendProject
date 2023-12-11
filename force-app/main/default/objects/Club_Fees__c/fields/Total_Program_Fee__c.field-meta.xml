@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Program_Fee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Total_Enrolled_Students__c =1,  Club_Program__r.One_Kid_Fee__c -  Additional_Discount__c , 
+IF(Total_Enrolled_Students__c =2,  Club_Program__r.Two_Kids_Fee__c - Additional_Discount__c , 
+IF(Total_Enrolled_Students__c =3,  Club_Program__r.Three_Kids_Fee__c - Additional_Discount__c, 
+IF(Total_Enrolled_Students__c =4,   Club_Program__r.Four_Kid_Fee__c - Additional_Discount__c,   
+0))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Program Fee</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

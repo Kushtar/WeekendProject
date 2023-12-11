@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X23_Volleyball</fullName>
+    <columns>NAME</columns>
+    <columns>Parent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Program__c</field>
+        <operation>contains</operation>
+        <value>Sunday</value>
+    </filters>
+    <label>23 Volleyball</label>
+</ListView>
