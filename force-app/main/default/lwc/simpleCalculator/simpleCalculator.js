@@ -59,4 +59,11 @@ export default class SimpleCalculator extends LightningElement {
   showPreviousResultToggle(event) {
     this.showPreviousResults = event.target.checked;
   }
+
+  get bmiData() {
+    if (this.bmi === undefined) {
+      return "";
+    }
+    return `Your BMI is: ${this.bmi}`;
+  }
 }
