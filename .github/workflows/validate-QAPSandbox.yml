@@ -1,0 +1,19 @@
+name: Validate QAP Pull Request
+
+on:
+  pull_request:
+    branches:
+      - QAPSandbox
+    paths:
+      - "force-app/**"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    environment: QAPSandbox
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate on QASandbox
+        uses: jawills/sf-deploy@v1.0
+        with:
+          SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
+          DRY_RUN: true
