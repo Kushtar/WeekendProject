@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Enrollment_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Enrollment__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Enrollment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Enrollment__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>KCC_Edu</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>KCC Edu</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Manage_Staff</tabs>
+    <tabs>NewStudent__c</tabs>
+    <tabs>Enrollment__c</tabs>
+    <tabs>NewParent__c</tabs>
+    <tabs>Class__c</tabs>
+    <tabs>NewProgram__c</tabs>
+    <tabs>Invoce__c</tabs>
+    <tabs>NewEmployee__c</tabs>
+    <tabs>NewWork_Unit__c</tabs>
+    <tabs>PaymentLog__c</tabs>
+    <tabs>NewPay_Check__c</tabs>
+    <tabs>NewPayment__c</tabs>
+    <tabs>NewAgreement__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>KCC_Edu_UtilityBar</utilityBar>
+</CustomApplication>
