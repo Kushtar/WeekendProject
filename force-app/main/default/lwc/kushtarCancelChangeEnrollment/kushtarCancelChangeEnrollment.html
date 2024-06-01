@@ -17,6 +17,8 @@
                 </div>
 
                 <div if:true={dateSelection}>
+                  <p> Recordid from url: {recordId}</p>
+                  <p>External Id: {ExternalAccountId}</p>
                 
                     <lightning-input type="date" name="Old Date" label="Old Date" disabled value="2024-06-07"></lightning-input>
                     <p></p>
@@ -35,12 +37,25 @@
                 <div if:true={changeConfirmationPage}>
                     <p>Change Enrollment Date is Successfull!!</p>
                 </div>
+
+                <div if:true={cancelAuthorizationPage}>
+                  <p></p>
+                  <p>Do you want to cancel your pending enrollment? </p>
+                  <p>If Yes, Click Submit</p>
+                  <p>If No, Click Cancel</p>
+                  <p></p>
+                </div>
+
+                <div if:true={cancelConfirmationPage}>
+                  Cancel Pending Enrollment is Successfull!!
+                </div>
                 
             </div>
               <div class="slds-modal__footer">
                 <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={handleClose}>{cancelOrCloseButton}</button>
                 <button if:true={updateButton} class="slds-button slds-button_brand" onclick={handleUpdate}>Update</button>
-                <button if:true={submitButton} class="slds-button slds-button_brand" onclick={handleSubmit}>Submit</button>
+                <button if:true={submitButtonChange} class="slds-button slds-button_brand" onclick={handleSubmitChange}>Submit</button>
+                <button if:true={submitButtonCancel} class="slds-button slds-button_brand" onclick={handleSubmitCancel}>Submit</button>
 
               </div>
             </div>
