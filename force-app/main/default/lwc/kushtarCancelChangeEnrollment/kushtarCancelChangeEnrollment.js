@@ -1,5 +1,7 @@
 import { LightningElement, api, wire } from 'lwc';
 import accountDetails from '@salesforce/apex/AccountService.getAccountDetails';
+import submitToExternalSystem from '@salesforce/apex/AccountService.submitToExternalSystem';
+
 export default class ButtonBasic extends LightningElement {
     //Get RecordId from URL
     @api recordId;
@@ -19,7 +21,7 @@ export default class ButtonBasic extends LightningElement {
     //Variable from Apex
     ExternalAccountId;
     ServiceStartDate
-    ServiceEndDate
+    Name
     ServiceAddress
 
 
@@ -28,6 +30,9 @@ export default class ButtonBasic extends LightningElement {
         if (data) {
             console.log(data);
             this.ExternalAccountId = data.ExternalAccountId;
+            this.ServiceStartDate=data.ServiceStartDate;
+            this.Name=data.Name;
+            this.ServiceAddress=data.ServiceAddress;
         }
         if(error){
             console.log(error);
@@ -62,6 +67,7 @@ export default class ButtonBasic extends LightningElement {
         this.changeConfirmationPage=true;
         this.submitButtonChange=false;
         this.cancelOrCloseButton='Close';
+        this.submit();
     }
 
     handleSubmitCancel(){
@@ -70,6 +76,10 @@ export default class ButtonBasic extends LightningElement {
         this.cancelOrCloseButton='Close';
         this.cancelConfirmationPage=true;
 
+    }
+
+    handleNewDate(event){
+        this.NewServiceStartDate=event.target.value;
     }
 
     handleClose(){
@@ -87,5 +97,17 @@ export default class ButtonBasic extends LightningElement {
         this.cancelConfirmationPage=false;
     }
 
+    submit(){
+        submitToExternalSystem({
+            ServiceId: this.recordId,
+            NewServiceStartDate: this.NewServiceStartDate,
+            RequestType: 'Change'
+        }).then(response => {
+            this.responseFromApex = response
+            console.log(response);
+        }).catch(error => {
+            console.error('Failed to submit', error.body.message);
+        })
 
+    }
 }
